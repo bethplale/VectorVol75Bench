@@ -1,3 +1,3 @@
-# GitHub pages with Bioschemas markup
+# Vector Volume 75 Benchmark
 
-These GitHub pages include a page describing a [software](./software.md) and a page describing a [dataset](./dataset.md) that was created as an output from the software at hand.
+The Vector Volume 75 benchmark is a benchmark dataset of 75 queries and accompanying results designed to evaluate the expressiveness of using vector embedding to query digitized pages from textual content (textbooks, booklets).  These GitHub pages include a page describing the [software](./software.md) used to run the benchmark and a page describing the benchmark [dataset](./dataset.md).
