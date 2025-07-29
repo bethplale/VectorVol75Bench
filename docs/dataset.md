@@ -1,34 +1,72 @@
 # TREC-doc-2-doc-relevance datasets
 
-One of the results of the web-app [TREC-doc-2-doc-relevance](https://github.com/zbmed-semtec/TREC-doc-2-doc-relevance) is the measure of the inter-annotator agreement on the task of document-to-document relevance assessment using Fleiss' kappa. 
-
-This page has been created to embed schema.org and Bioschemas markup describing the [Fleiss kappa for doc-2-doc relevance assessment](https://doi.org/10.5281/zenodo.7338056) dataset and its current release deposited in Zenodo. 
-
-<script type="application/ld+json">
-  {
-    "@context": "https://schema.org", 
-    "@type": "Dataset",
-    "@id": "https://doi.org/10.5281/zenodo.7338056",
-    "http://purl.org/dc/terms/conformsTo": "https://bioschemas.org/profiles/Dataset/1.0-RELEASE", 
-    "identifier": "DOI:10.5281/zenodo.7338056",
-    "citation": "Giraldo O, Solanki D, Rebholz-Schuhmann D, Castro LJ. Fleiss kappa for doc-2-doc relevance assessment. Zenodo; 2022. doi:10.5281/zenodo.7338056",
-    "name": "Fleiss kappa for doc-2-doc relevance assessment",
-    "description": "Fleiss' kappa measuring inter-annotator agreement on a document-to-document relevance assessment task. The table contains 7 columns, the first one presents the topics, 8 in total. The second column shows the \"reference articles\", represented by their PubMed-ID and organized by topic. The third column shows the Fleiss’ Kappa results. The fourth column shows the interpretation of the Fleiss' Kappa results being: i) \"Poor\" results <0.20, ii) \"Fair\" results within 0.21 - 0.40, and iii) \"Moderate\" results within 0.41 - 0.60. The fifth column shows the PubMed-IDs of evaluation articles rated by the four annotators as \"Relevant\" regarding its corresponding \"reference article\". The sixth column shows the PubMed-IDs of evaluation articles rated by the four annotators as \"Partially relevant\" regarding its corresponding \"reference article\". The seventh column shows the PubMed-IDs of evaluation articles rated by the four annotators as \"Non-relevant\" regarding its corresponding \"reference article\".",
-    "keywords": "Fleiss' Kappa, Inter-annoator agreement, TREC Genomics Track 2005, relevance assessment", 
-    "license": {
+{
+  "@context": "https://w3id.org/ro/crate/1.2/context",
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
       "@type": "CreativeWork",
-      "@id": "http://spdx.org/licenses/CC-BY-4.0",
-      "name": "Creative Commons Attribution 4.0 International", 
-      "alternateName": "CC BY 4.0",
-      "url": "https://creativecommons.org/licenses/by/4.0/"
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "./"
+      }
     },
-    "url": "https://zenodo.org/record/7338056",
-    "datePublished": "2022-11-19",
-    "author": [                
-      {"@id": "https://orcid.org/0000-0003-2978-8922"},
-      {"@id": "https://orcid.org/0009-0004-1529-0095"},
-      {"@id": "https://orcid.org/0000-0002-1018-0370"},
-      {"@id": "https://orcid.org/0000-0003-3986-0510"}
-    ]
-  }
-  </script>
+    {
+      "@id": "./",
+      "@type": [
+        "Dataset",
+        "LearningResource"
+      ],
+      "hasPart": [
+        {
+          "@id": "VectorDiscovery75.csv"
+        }
+      ],
+      "name": "Dataset Vector Discovery 75 benchmark",
+      "description": "Dataset of Query Benchmark and Scripts.",
+      "datePublished": "2023-07-29",
+      "license": {
+        "@id": "http://spdx.org/licenses/CC0-1.0"
+      },
+      "author": {
+        "@id": "https://orcid.org/0000-0003-2164-8132"
+      },
+      "publisher": {
+        "@id": "https://ror.org/0293rh119"
+      }
+    },
+    {
+      "@id": "VectorDiscovery75.csv",
+      "@type": "File",
+      "name": "Vector Discovery 75 benchmark",
+      "description": "Curated set of queries for evaluating vector search systems.",
+      "encodingFormat": "text/csv",
+      "license": {
+        "@id": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+      }
+    },
+    {
+      "@id": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "@type": "CreativeWork",
+      "name": "CC BY-NC-SA 4.0 International",
+      "description": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2164-8132",
+      "@type": "Person",
+      "name": "Beth Plale",
+      "givenName": "Beth",
+      "familyName": "Plale"
+    },
+    {
+      "@id": "https://ror.org/0293rh119",
+      "@type": "Organization",
+      "name": "University of Oregon",
+      "location": {
+        "@id": "https://ror.org/0293rh119#location"
+      }
+    }
+  ]
+}
