@@ -1,4 +1,4 @@
-#Vector volume 75 benchmark is at https://doi.org/10.5281/zenodo.XXXXXXX
+# Vector volume 75 benchmark is at https://doi.org/10.5281/zenodo.XXXXXXX and https://github.com/bethplale/VectorVol75Bench/blob/main/docs/VectorDiscovery75.csv
 
 <script type="application/ld+json">
   {
